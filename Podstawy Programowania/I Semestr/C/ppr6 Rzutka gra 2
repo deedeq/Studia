@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main(int argc, char *argv[]) {
+	
+	int x, y, n, pkt=0, i=1;
+	
+	scanf("%d %d %d", &x, &y, &n);
+	
+	while(i<=n)
+	{
+	
+		int s;
+		scanf("%d", &s);
+		
+		if(s<x)
+			pkt+=(x-s);
+		else if(s>y)
+			pkt+=(s-y);
+		else
+			pkt=0;
+		
+		i++;
+	}	
+	
+	printf("%d", pkt);
+
+	return 0;
+}
