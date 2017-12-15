@@ -1,0 +1,15 @@
+#include<iostream>
+#include<iomanip>
+
+using namespace std;
+
+int main()
+{
+	float U,N,S;
+	
+	cin>>U>>N>>S;
+	
+	cout<<fixed<<setprecision(2)<<S/(U/2+N);
+	
+	return 0;
+}
