@@ -1,0 +1,8 @@
+a,b = input().split()
+a = int(a)
+b = int(b)
+znak = input()
+if znak=='p' and a%2==1 or znak=='n' and a%2==0:
+    a += 1
+for i in range(a,b+1,2):
+    print(i, end=" ")
