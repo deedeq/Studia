@@ -1,0 +1,10 @@
+dane = input().split()
+a = int(dane[0])
+b = int(dane[1])
+x = int(input())
+if x<a:
+    print(a-x)
+elif x>b:
+    print(x-b)
+else:
+    print("BINGO")
