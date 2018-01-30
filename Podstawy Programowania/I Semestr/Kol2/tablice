@@ -1,0 +1,26 @@
+lista = []
+wymiary = input().split()
+n = int(wymiary[0])
+m = int(wymiary[1])
+p = 1
+z = n * m
+
+for i in range(m):
+    lista.append(input().split())
+
+for j in range(n):
+    if p % 2 == 1:
+        for k in range(m):
+            if z > 1:
+                print(lista[k][j], end = ', ')
+            else:
+                print(lista[k][j])
+            z -= 1
+    else:
+        for k in range(m-1, -1, -1):
+            if z > 1:
+                print(lista[k][j], end = ', ')
+            else:
+                print(lista[k][j])
+            z -= 1
+    p += 1
