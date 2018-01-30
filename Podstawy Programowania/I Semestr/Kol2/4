@@ -1,0 +1,9 @@
+x = input()
+x = int(x)
+
+for i in range(x):
+    wyraz = input()
+    litery = input()
+    for j in range(len(wyraz)):
+        ile = litery.count(str(wyraz[j]))
+        print(str(wyraz[j])+": "+str(ile))
