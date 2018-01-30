@@ -1,0 +1,15 @@
+dane = input().split()
+max = 0
+for i in range(len(dane)):
+    if i == (len(dane)-1):
+        if int(dane[i]) >= int(max):
+            max = int(dane[i])
+        print(int(max))
+        break
+    if int(dane[i]) == 0:
+        if int(max) > 0:
+            print(int(max))
+        max = 0
+    else:
+        if int(dane[i]) > int(max):
+            max = int(dane[i])
