@@ -1,0 +1,27 @@
+sekundy = int(input())
+
+g = 0
+m = 0
+
+while sekundy >= 3600:
+    sekundy -= 3600
+    g += 1
+
+while sekundy >= 60:
+    sekundy -= 60
+    m += 1
+
+g = str(g)
+m = str(m)
+sekundy = str(sekundy)
+
+if len(g) == 1:
+    g = "0" + g
+
+if len(m) == 1:
+    m = "0" + m
+
+if len(sekundy) == 1:
+    sekundy = "0" + sekundy
+
+print(g+":"+m+":"+sekundy)
