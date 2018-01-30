@@ -1,0 +1,19 @@
+def NWD(a,b):
+    while(a != b):
+        if(a > b):
+            a -= b
+        else:
+            b -= a
+    return a
+
+def NWW(a,b):
+    return int(a*b / NWD(a,b))
+
+licznik = 0
+k = input()
+dane = input().split()
+for i in range(len(dane)-1):
+    for j in range(i+1,len(dane),1):
+        if NWW(int(dane[i]), int(dane[j])) == int(k):
+            licznik += 1
+print(licznik)
