@@ -1,0 +1,20 @@
+n = input()
+
+for i in range(int(n)):
+    x = 1
+    zdanie1 = input()
+    zdanie2 = input()
+    o = len(zdanie1)
+    zdanie1 = sorted(zdanie1.lower())
+    zdanie2 = sorted(zdanie2.lower())
+    zdanie1 = zdanie1[::-1]
+    zdanie2 = zdanie2[::-1]
+
+    for j in range(o):
+        if zdanie1[j]!=" ":
+            if zdanie1[j]!=zdanie2[j]:
+                x = 0
+    if x == 0:
+        print("NIE")
+    else:
+        print("TAK")
